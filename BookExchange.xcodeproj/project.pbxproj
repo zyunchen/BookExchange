@@ -13,6 +13,7 @@
 		120A11CB1CBFC1500033CBDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 120A11CA1CBFC1500033CBDD /* Assets.xcassets */; };
 		120A11CE1CBFC1500033CBDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 120A11CC1CBFC1500033CBDD /* LaunchScreen.storyboard */; };
 		120A11D91CBFC1510033CBDD /* BookExchangeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120A11D81CBFC1510033CBDD /* BookExchangeTests.swift */; };
+		120A11E41CBFC65A0033CBDD /* LibraryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120A11E31CBFC65A0033CBDD /* LibraryTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		120A11D41CBFC1500033CBDD /* BookExchangeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookExchangeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		120A11D81CBFC1510033CBDD /* BookExchangeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookExchangeTests.swift; sourceTree = "<group>"; };
 		120A11DA1CBFC1510033CBDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		120A11E31CBFC65A0033CBDD /* LibraryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				120A11C31CBFC1500033CBDD /* AppDelegate.swift */,
 				120A11C51CBFC1500033CBDD /* LibraryTableViewController.swift */,
+				120A11E31CBFC65A0033CBDD /* LibraryTableViewCell.swift */,
 				120A11C71CBFC1500033CBDD /* Main.storyboard */,
 				120A11CA1CBFC1500033CBDD /* Assets.xcassets */,
 				120A11CC1CBFC1500033CBDD /* LaunchScreen.storyboard */,
@@ -199,6 +202,7 @@
 			files = (
 				120A11C61CBFC1500033CBDD /* LibraryTableViewController.swift in Sources */,
 				120A11C41CBFC1500033CBDD /* AppDelegate.swift in Sources */,
+				120A11E41CBFC65A0033CBDD /* LibraryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

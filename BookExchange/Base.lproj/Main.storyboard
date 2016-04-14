@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Item 2-->
@@ -35,31 +36,50 @@
         <!--Library-->
         <scene sceneID="91J-n8-6nf">
             <objects>
-                <tableViewController id="9Bp-Xt-Ybu" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Xve-k4-STd">
+                <tableViewController id="9Bp-Xt-Ybu" customClass="LibraryTableViewController" customModule="BookExchange" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="183" sectionHeaderHeight="28" sectionFooterHeight="28" id="Xve-k4-STd">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="dRh-rG-c5b">
-                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LibraryCell" rowHeight="183" id="dRh-rG-c5b" customClass="LibraryTableViewCell" customModule="BookExchange" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="183"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dRh-rG-c5b" id="z08-RI-uun">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="183"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C2V-FJ-7xU">
+                                            <rect key="frame" x="14" y="8" width="109" height="167"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="167" id="FOQ-lS-vsT"/>
+                                                <constraint firstAttribute="width" constant="109" id="xYf-QK-3Cg"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" red="1" green="0.031195749419999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="C2V-FJ-7xU" firstAttribute="top" secondItem="z08-RI-uun" secondAttribute="topMargin" id="h9Q-v5-8aP"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="C2V-FJ-7xU" secondAttribute="bottom" id="j1a-lI-kJW"/>
+                                        <constraint firstItem="C2V-FJ-7xU" firstAttribute="leading" secondItem="z08-RI-uun" secondAttribute="leadingMargin" constant="6" id="xNn-zW-ROs"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
+                        <sections/>
                         <connections>
                             <outlet property="dataSource" destination="9Bp-Xt-Ybu" id="XzQ-nx-0Sz"/>
                             <outlet property="delegate" destination="9Bp-Xt-Ybu" id="fUG-Cm-Jpb"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Library" id="z4k-Og-4JU"/>
+                    <navigationItem key="navigationItem" title="Library" id="fwh-y2-oB7">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="8Su-bu-I8Y"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WXe-yi-sbU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="688" y="-156"/>
+            <point key="canvasLocation" x="1500" y="-156"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="mit-n4-jxO">
@@ -71,13 +91,32 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="9Bp-Xt-Ybu" kind="relationship" relationship="viewControllers" id="VNi-Fi-DGX"/>
+                        <segue destination="sPD-my-MKQ" kind="relationship" relationship="viewControllers" id="VNi-Fi-DGX"/>
                         <segue destination="y9U-rd-sp5" kind="relationship" relationship="viewControllers" id="ayI-vE-k7y"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E9k-bQ-NWg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-164" y="267"/>
+        </scene>
+        <!--Library-->
+        <scene sceneID="Qp5-gC-Awn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sPD-my-MKQ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Library" id="z4k-Og-4JU"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bpn-sj-fAd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9Bp-Xt-Ybu" kind="relationship" relationship="rootViewController" id="mZp-Oe-nMj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D6c-lY-xs4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="688" y="-156"/>
         </scene>
     </scenes>
 </document>
