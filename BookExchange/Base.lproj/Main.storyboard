@@ -21,7 +21,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="item2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vlR-As-RUl">
                                 <rect key="frame" x="236" y="263" width="44" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -57,11 +57,43 @@
                                                 <constraint firstAttribute="width" constant="109" id="xYf-QK-3Cg"/>
                                             </constraints>
                                         </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book name here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tgc-hV-65Q">
+                                            <rect key="frame" x="131" y="8" width="125" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="who donates this book" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UgO-rP-jic">
+                                            <rect key="frame" x="131" y="154" width="174" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LzX-8I-bLv">
+                                            <rect key="frame" x="131" y="37" width="88" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="distance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qdw-Mq-fzO">
+                                            <rect key="frame" x="526" y="153" width="66" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <color key="backgroundColor" red="1" green="0.031195749419999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
+                                        <constraint firstItem="UgO-rP-jic" firstAttribute="leading" secondItem="C2V-FJ-7xU" secondAttribute="trailing" constant="8" id="ChB-rY-PRt"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Qdw-Mq-fzO" secondAttribute="bottom" id="Fzx-BM-FeS"/>
+                                        <constraint firstItem="UgO-rP-jic" firstAttribute="bottom" secondItem="z08-RI-uun" secondAttribute="bottomMargin" id="K5w-UB-ihF"/>
+                                        <constraint firstItem="tgc-hV-65Q" firstAttribute="top" secondItem="z08-RI-uun" secondAttribute="topMargin" id="LBb-GQ-zp0"/>
+                                        <constraint firstItem="LzX-8I-bLv" firstAttribute="leading" secondItem="C2V-FJ-7xU" secondAttribute="trailing" constant="8" id="RJj-f5-SkW"/>
+                                        <constraint firstItem="LzX-8I-bLv" firstAttribute="top" secondItem="tgc-hV-65Q" secondAttribute="bottom" constant="8" id="Sfk-Px-4Qh"/>
+                                        <constraint firstItem="Qdw-Mq-fzO" firstAttribute="trailing" secondItem="z08-RI-uun" secondAttribute="trailingMargin" id="TSO-ps-kRX"/>
                                         <constraint firstItem="C2V-FJ-7xU" firstAttribute="top" secondItem="z08-RI-uun" secondAttribute="topMargin" id="h9Q-v5-8aP"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="C2V-FJ-7xU" secondAttribute="bottom" id="j1a-lI-kJW"/>
+                                        <constraint firstItem="tgc-hV-65Q" firstAttribute="leading" secondItem="C2V-FJ-7xU" secondAttribute="trailing" constant="8" id="unQ-y6-WvV"/>
                                         <constraint firstItem="C2V-FJ-7xU" firstAttribute="leading" secondItem="z08-RI-uun" secondAttribute="leadingMargin" constant="6" id="xNn-zW-ROs"/>
                                     </constraints>
                                 </tableViewCellContentView>

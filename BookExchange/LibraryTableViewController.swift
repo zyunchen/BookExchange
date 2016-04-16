@@ -13,7 +13,6 @@ class LibraryTableViewController: UITableViewController {
     //MARK:Properties
     let InitIndentifier = "LibraryCell"
     var cellForHeight:LibraryTableViewCell!
-//    let CellForHeight = self.tableView.dequeueReusableCellWithIdentifier(initIndentifier) as! LibraryTableViewCell
 
     override func viewDidLoad() {
         super.viewDidLoad()
