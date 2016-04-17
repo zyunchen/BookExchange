@@ -16,6 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        //set up AVOS id
+        AVOSCloud.setApplicationId("XAkRomuiGwTXdXjmkVdP8Eri-gzGzoHsz", clientKey: "B8nIV9hdtJFnDuQGJlVAU2ig")
+        
+        //open avos analytics
+        AVAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
         return true
     }
 

@@ -23,7 +23,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>06AD4389F2832DC594B1565301CE195E</key>
+		<key>040D94FBBE340AAEAC0A1032B5ED3448</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -32,11 +32,11 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>AVIMKeyedConversation.h</string>
+			<string>AVObject.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>09A496014FE614B207515CC71739F438</key>
+		<key>0D25F0F2EE0B31D326CD219FA7436D51</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -45,33 +45,7 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>AVIMConversation.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0AB6A1EF150AA14E719DBF328E06AE4D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AVAvailability.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0E638A329920257C40CD3631B47D344F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AVCloudQueryResult.h</string>
+			<string>AVHistoryMessageQuery.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -85,40 +59,6 @@
 			<string>text.plist.xml</string>
 			<key>path</key>
 			<string>Pods-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>13FA1C4D7086B94BCB8D47475C94B3AB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FFF7D38E6B6A267E10E6A5CD5F10ED53</string>
-				<string>A8E5F62DF96BCE0136A7120239E2FD22</string>
-				<string>AC7CEC07AB599F156C5813766B32A974</string>
-				<string>D4C94922C2F4280545A4F8F484A82940</string>
-				<string>D50EA8BE876BA696A5FD477B04F0B941</string>
-				<string>09A496014FE614B207515CC71739F438</string>
-				<string>4416095E0CBDC3E2E2D78191958D2EA9</string>
-				<string>5C64F9EDF685661A0457760EDE208816</string>
-				<string>80A89878C4D5485ED8A1485F42E3B79F</string>
-				<string>E48BB1D73E0513EE9DC06F96B1975EF6</string>
-				<string>06AD4389F2832DC594B1565301CE195E</string>
-				<string>472B49B611C8235D4E9D8131E5B98F10</string>
-				<string>3B8EC6CD33B21428FADDC5B62D484C24</string>
-				<string>F4FDCA7D33B9B1BE865182EF7E79B2F9</string>
-				<string>7512FF1A6090BC24F2AA3006C7FD2FD7</string>
-				<string>CA908FAB8752E2E7D414061A9D9AC199</string>
-				<string>493A9025F3760B36370B2561E980D540</string>
-				<string>4A014FFFD9D4983032519996189980FC</string>
-				<string>9FFE827D146A0D995D0645D4F003E5C7</string>
-				<string>FB4FD2FAEE9449466908FF0984DC17A8</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>AVOSCloudIM</string>
-			<key>path</key>
-			<string>AVOSCloudIM</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -146,7 +86,7 @@
 			<key>productType</key>
 			<string>com.apple.product-type.library.static</string>
 		</dict>
-		<key>1814A36317537428285212F7B4AD1211</key>
+		<key>17B044CB4AEA107A563C0569EB1FEC97</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -155,7 +95,7 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>AVSearchQuery.h</string>
+			<string>AVInstallation.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -191,19 +131,6 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
-		<key>1E89B59B9E776E7A09E4A43E82C05E7F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AVRole.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>1F0B9F713A13B4F29BE0C0E7483B187B</key>
 		<dict>
 			<key>children</key>
@@ -217,7 +144,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>20064E1E063A7A04476C8F3FAA6C6232</key>
+		<key>20DD23448C958A6DB7CEAB2A5C937BF2</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -226,48 +153,47 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>AVRelation.h</string>
+			<string>AVUser.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>23AA2F3B8E6B39BE8D1EC945A7BC1A74</key>
+		<key>20F35969F85877799D3D991BD9A3910D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>archive.ar</string>
+			<key>path</key>
+			<string>libAVOSCloudCrashReporting.a</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>22DC1F4EDB2E3A94462458A0EE2A289E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AVAnonymousUtils.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>24205C5E7058F687C003685F91ECE33C</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>8E58A232A398CCBC9E45849B5B80641A</string>
-				<string>F830F56A808BCFFFB7E4D81E7128BAF8</string>
-				<string>13FA1C4D7086B94BCB8D47475C94B3AB</string>
+				<string>5798C5361A219E7A729BCDBFDA46E790</string>
+				<string>4C62AC6CB66D939A8FED12CB4446F8A8</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
 			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2670BC7660DCD3E937541116B75975AF</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AVConstants.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>26D2609879A2BAC21E359EECBCE117AC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AVSignature.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -357,19 +283,6 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
-		<key>2D264CDFE9C1187BE308F3E627138900</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AVUser.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
 		<dict>
 			<key>buildConfigurations</key>
@@ -397,7 +310,7 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>30DE17EEB8DA3D5D5ED196DF48D4C515</key>
+		<key>3356FF635D18A036DBD5DE4EE2FF1BFB</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -406,7 +319,7 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>AVGroup.h</string>
+			<string>AVAvailability.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -423,7 +336,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>38AD3A1F35BE36BD168B99B941C7FBA4</key>
+		<key>3A46AB7E3F4812EB2E8122CBA49CDAFC</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -432,20 +345,7 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>AVSession.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3B8EC6CD33B21428FADDC5B62D484C24</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AVIMMessage.h</string>
+			<string>AVOSCloud.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -462,7 +362,7 @@
 			<key>sourceTree</key>
 			<string>DEVELOPER_DIR</string>
 		</dict>
-		<key>4416095E0CBDC3E2E2D78191958D2EA9</key>
+		<key>44F34E01F32A668C4374BEA6E5B57160</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -471,11 +371,11 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>AVIMConversationQuery.h</string>
+			<string>AVSearchSortBuilder.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>472B49B611C8235D4E9D8131E5B98F10</key>
+		<key>4C598AE9AD441A3D05E6E71F21CCDB3D</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -484,33 +384,23 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>AVIMLocationMessage.h</string>
+			<string>AVObject+Subclass.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>493A9025F3760B36370B2561E980D540</key>
+		<key>4C62AC6CB66D939A8FED12CB4446F8A8</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>children</key>
+			<array>
+				<string>F8DEF08292DA8868992002C3218D6C00</string>
+				<string>8FBE0A98152A3261DB2FB409B7038CD6</string>
+			</array>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>AVOSCloudCrashReporting</string>
 			<key>path</key>
-			<string>AVIMUserOptions.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4A014FFFD9D4983032519996189980FC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AVIMVideoMessage.h</string>
+			<string>AVOSCloudCrashReporting</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -527,7 +417,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>4F146613C8B89D2A6BC3B5D4BD4A48B8</key>
+		<key>52C2CA3385C923F16FE9E8DC1DD45C78</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -536,11 +426,11 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>AVAnonymousUtils.h</string>
+			<string>AVMessage.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>4FC90BC24FB2DC74BF0CC3F37FF7B47C</key>
+		<key>556F3E7F244E9676F46505EF58BCE12B</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -549,7 +439,53 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>AVGeoPoint.h</string>
+			<string>AVCloud.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5798C5361A219E7A729BCDBFDA46E790</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E94077869EF979A7141325534DF2FCC1</string>
+				<string>D36161947F370E286849F4F3A5E76D97</string>
+				<string>22DC1F4EDB2E3A94462458A0EE2A289E</string>
+				<string>3356FF635D18A036DBD5DE4EE2FF1BFB</string>
+				<string>556F3E7F244E9676F46505EF58BCE12B</string>
+				<string>CB21576355C78BA44433DD1605E89726</string>
+				<string>FA0575BA185216FBC1AA285F6E34E1D4</string>
+				<string>C603831353964644D7C2D1EA6EBEBE9C</string>
+				<string>F59D1E595D96985DEED4F482C3EB4694</string>
+				<string>F6CEF048E42E872FD42AAFC198B775FF</string>
+				<string>E06C1729CAA9012202BE64857FE56334</string>
+				<string>D7C98341E30E3A99D87DB7FE3BD080F1</string>
+				<string>0D25F0F2EE0B31D326CD219FA7436D51</string>
+				<string>17B044CB4AEA107A563C0569EB1FEC97</string>
+				<string>D39552C290DBFDAE51F420158AA7B795</string>
+				<string>52C2CA3385C923F16FE9E8DC1DD45C78</string>
+				<string>040D94FBBE340AAEAC0A1032B5ED3448</string>
+				<string>4C598AE9AD441A3D05E6E71F21CCDB3D</string>
+				<string>3A46AB7E3F4812EB2E8122CBA49CDAFC</string>
+				<string>D9D461EDE6A4649E31B384D3FF27B12C</string>
+				<string>8CA24B4C1770AE7DB51DF9127D77CB70</string>
+				<string>A12CA301C7D79295E34858FB4249DB4C</string>
+				<string>F0DE3BF27B1894DEF445907E57E96B4D</string>
+				<string>F0F85DB7B31EE4F9A4611A9A639D4AFB</string>
+				<string>70E8BC0BCA280E05AD2B37A573539429</string>
+				<string>44F34E01F32A668C4374BEA6E5B57160</string>
+				<string>9894DDD53FCA1E215F9ECC660EB8E894</string>
+				<string>E49FCF1D45BCF17B8E2129C5D8C4605D</string>
+				<string>B1DB25A6A46EF4B42ABA12D919855570</string>
+				<string>634133796B04AD2A6178684FD1C8C3B5</string>
+				<string>20DD23448C958A6DB7CEAB2A5C937BF2</string>
+				<string>BF70F87B21796CAF504064EF7BA0288E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>AVOSCloud</string>
+			<key>path</key>
+			<string>AVOSCloud</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -635,19 +571,6 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
-		<key>5C64F9EDF685661A0457760EDE208816</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AVIMConversationUpdateBuilder.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>60DB2522D6809309FA2F3B04848E7536</key>
 		<dict>
 			<key>buildActionMask</key>
@@ -661,7 +584,7 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>61F7FAF68569DAD5363E8D0AA9E011A2</key>
+		<key>634133796B04AD2A6178684FD1C8C3B5</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -670,33 +593,7 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>AVACL.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>65AEFCC65FFD3A125159A5ADA375EC0C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AVObject.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>65B88645711C68FC802578C2A2398918</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AVCloud.h</string>
+			<string>AVSubclassing.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -720,7 +617,7 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>7171BFB2734311E6F9B11163D103FBF0</key>
+		<key>70E8BC0BCA280E05AD2B37A573539429</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -729,59 +626,7 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>AVInstallation.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7512FF1A6090BC24F2AA3006C7FD2FD7</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AVIMTextMessage.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7696392A7AE501FF9129909DE0CADA4A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AVLogger.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>77251FD7EC85AC5D9727D841766FEC04</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AVMessage.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>78BB741B16432F7844BE82F061B05E24</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AVHistoryMessage.h</string>
+			<string>AVSearchQuery.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -823,7 +668,7 @@
 			<array>
 				<string>BA6428E9F66FD5A23C0A2E06ED26CD2F</string>
 				<string>BC3CA7F9E30CC8F7E2DD044DD34432FC</string>
-				<string>23AA2F3B8E6B39BE8D1EC945A7BC1A74</string>
+				<string>24205C5E7058F687C003685F91ECE33C</string>
 				<string>1F0B9F713A13B4F29BE0C0E7483B187B</string>
 				<string>037C0CA694176A3C0915F62C9D20B3E6</string>
 			</array>
@@ -832,85 +677,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>7F9456598688E4052B1CCFA01201AEE4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>archive.ar</string>
-			<key>path</key>
-			<string>libAVOSCloudIM.a</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>80A89878C4D5485ED8A1485F42E3B79F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AVIMFileMessage.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>819CDEB7832762BF5C9E9CF0FBC02DFB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AVObject+Subclass.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>81ACC03114DAD5C35953AA9ED8C56904</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AVOSCloud.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8452C9C7D8FD61D1DCBFA65DE5B8E174</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>archive.ar</string>
-			<key>path</key>
-			<string>libAVOSCloud.a</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>85FED1A2CD27696755B3E10C74025EB0</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AVAnalytics.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>88F8DA907B7F71586D22707C740F23CF</key>
+		<key>8CA24B4C1770AE7DB51DF9127D77CB70</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -923,66 +690,20 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>8D7603153447E4FAC306800697E1A063</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AVHistoryMessageQuery.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8E58A232A398CCBC9E45849B5B80641A</key>
+		<key>8FBE0A98152A3261DB2FB409B7038CD6</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>61F7FAF68569DAD5363E8D0AA9E011A2</string>
-				<string>85FED1A2CD27696755B3E10C74025EB0</string>
-				<string>4F146613C8B89D2A6BC3B5D4BD4A48B8</string>
-				<string>0AB6A1EF150AA14E719DBF328E06AE4D</string>
-				<string>65B88645711C68FC802578C2A2398918</string>
-				<string>0E638A329920257C40CD3631B47D344F</string>
-				<string>2670BC7660DCD3E937541116B75975AF</string>
-				<string>986F9F6E7C934C73521F6E4CE59DBD9A</string>
-				<string>90D6655641929CC8A8B095FF0D119D0F</string>
-				<string>4FC90BC24FB2DC74BF0CC3F37FF7B47C</string>
-				<string>30DE17EEB8DA3D5D5ED196DF48D4C515</string>
-				<string>78BB741B16432F7844BE82F061B05E24</string>
-				<string>8D7603153447E4FAC306800697E1A063</string>
-				<string>7171BFB2734311E6F9B11163D103FBF0</string>
-				<string>7696392A7AE501FF9129909DE0CADA4A</string>
-				<string>77251FD7EC85AC5D9727D841766FEC04</string>
-				<string>65AEFCC65FFD3A125159A5ADA375EC0C</string>
-				<string>819CDEB7832762BF5C9E9CF0FBC02DFB</string>
-				<string>81ACC03114DAD5C35953AA9ED8C56904</string>
-				<string>AA0E093EDC64D9B133EAB074A0BBD6ED</string>
-				<string>88F8DA907B7F71586D22707C740F23CF</string>
-				<string>20064E1E063A7A04476C8F3FAA6C6232</string>
-				<string>1E89B59B9E776E7A09E4A43E82C05E7F</string>
-				<string>9596AC55D686132791ADF8B84ACCF0ED</string>
-				<string>1814A36317537428285212F7B4AD1211</string>
-				<string>B487797E6212ACA16F785B107A681094</string>
-				<string>38AD3A1F35BE36BD168B99B941C7FBA4</string>
-				<string>26D2609879A2BAC21E359EECBCE117AC</string>
-				<string>995C1857E716E9F14E6EDD894D5562B7</string>
-				<string>E9A8C7AEAE92A6D70FB663372F99C218</string>
-				<string>2D264CDFE9C1187BE308F3E627138900</string>
-				<string>E406645CEA514D2881DD1F558AEDA2C7</string>
+				<string>20F35969F85877799D3D991BD9A3910D</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>AVOSCloud</string>
-			<key>path</key>
-			<string>AVOSCloud</string>
+			<string>Frameworks</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>90D6655641929CC8A8B095FF0D119D0F</key>
+		<key>9894DDD53FCA1E215F9ECC660EB8E894</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -991,46 +712,7 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>AVFileQuery.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9596AC55D686132791ADF8B84ACCF0ED</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AVSaveOption.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>96CF8C3A5E82F582E48E0E8B5434240E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>archive.ar</string>
-			<key>path</key>
-			<string>libAVOSCloudCrashReporting.a</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>986F9F6E7C934C73521F6E4CE59DBD9A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AVFile.h</string>
+			<string>AVSession.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1047,7 +729,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>995C1857E716E9F14E6EDD894D5562B7</key>
+		<key>A12CA301C7D79295E34858FB4249DB4C</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1056,20 +738,7 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>AVStatus.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9FFE827D146A0D995D0645D4F003E5C7</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AVOSCloudIM.h</string>
+			<string>AVRelation.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1086,7 +755,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>A8E5F62DF96BCE0136A7120239E2FD22</key>
+		<key>B1DB25A6A46EF4B42ABA12D919855570</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1095,33 +764,7 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>AVIMAvailability.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AA0E093EDC64D9B133EAB074A0BBD6ED</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AVPush.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AC7CEC07AB599F156C5813766B32A974</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AVIMClient.h</string>
+			<string>AVStatus.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1143,19 +786,6 @@
 			<string>Pods</string>
 			<key>path</key>
 			<string>Target Support Files/Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B487797E6212ACA16F785B107A681094</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AVSearchSortBuilder.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1196,19 +826,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>BE47206A678EA4C98012FF47E100F77D</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>96CF8C3A5E82F582E48E0E8B5434240E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>BF6342C8B29F4CEEA088EFF7AB4DE362</key>
 		<dict>
 			<key>children</key>
@@ -1219,6 +836,19 @@
 			<string>PBXGroup</string>
 			<key>name</key>
 			<string>iOS</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BF70F87B21796CAF504064EF7BA0288E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C45A6B87160EBE3DA8F7B51D9CD0E048</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1237,7 +867,20 @@
 			<key>sourceTree</key>
 			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
-		<key>CA908FAB8752E2E7D414061A9D9AC199</key>
+		<key>C45A6B87160EBE3DA8F7B51D9CD0E048</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>archive.ar</string>
+			<key>path</key>
+			<string>libAVOSCloud.a</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C603831353964644D7C2D1EA6EBEBE9C</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1246,7 +889,46 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>AVIMTypedMessage.h</string>
+			<string>AVFile.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CB21576355C78BA44433DD1605E89726</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AVCloudQueryResult.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D36161947F370E286849F4F3A5E76D97</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AVAnalytics.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D39552C290DBFDAE51F420158AA7B795</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AVLogger.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1288,7 +970,7 @@
 				<string>1469924FC52F60B0068FA24EEFCB3EFC</string>
 			</array>
 		</dict>
-		<key>D4C94922C2F4280545A4F8F484A82940</key>
+		<key>D7C98341E30E3A99D87DB7FE3BD080F1</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1297,11 +979,11 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>AVIMClientOpenOption.h</string>
+			<string>AVHistoryMessage.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>D50EA8BE876BA696A5FD477B04F0B941</key>
+		<key>D9D461EDE6A4649E31B384D3FF27B12C</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1310,24 +992,11 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>AVIMCommon.h</string>
+			<string>AVPush.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>E406645CEA514D2881DD1F558AEDA2C7</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>8452C9C7D8FD61D1DCBFA65DE5B8E174</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E48BB1D73E0513EE9DC06F96B1975EF6</key>
+		<key>E06C1729CAA9012202BE64857FE56334</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1336,11 +1005,11 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>AVIMImageMessage.h</string>
+			<string>AVGroup.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>E9A8C7AEAE92A6D70FB663372F99C218</key>
+		<key>E49FCF1D45BCF17B8E2129C5D8C4605D</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1349,11 +1018,76 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>AVSubclassing.h</string>
+			<string>AVSignature.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>E9C32E3FDBF0401145B404B3219FCCE1</key>
+		<key>E94077869EF979A7141325534DF2FCC1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AVACL.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F0DE3BF27B1894DEF445907E57E96B4D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AVRole.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F0F85DB7B31EE4F9A4611A9A639D4AFB</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AVSaveOption.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F59D1E595D96985DEED4F482C3EB4694</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AVFileQuery.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F6CEF048E42E872FD42AAFC198B775FF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AVGeoPoint.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F8DEF08292DA8868992002C3218D6C00</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1366,7 +1100,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>F4FDCA7D33B9B1BE865182EF7E79B2F9</key>
+		<key>FA0575BA185216FBC1AA285F6E34E1D4</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1375,49 +1109,7 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>AVIMSignature.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F830F56A808BCFFFB7E4D81E7128BAF8</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E9C32E3FDBF0401145B404B3219FCCE1</string>
-				<string>BE47206A678EA4C98012FF47E100F77D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>AVOSCloudCrashReporting</string>
-			<key>path</key>
-			<string>AVOSCloudCrashReporting</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FB4FD2FAEE9449466908FF0984DC17A8</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>7F9456598688E4052B1CCFA01201AEE4</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FFF7D38E6B6A267E10E6A5CD5F10ED53</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AVIMAudioMessage.h</string>
+			<string>AVConstants.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>

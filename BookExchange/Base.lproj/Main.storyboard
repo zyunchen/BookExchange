@@ -106,12 +106,77 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Library" id="fwh-y2-oB7">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="8Su-bu-I8Y"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="8Su-bu-I8Y">
+                            <connections>
+                                <segue destination="SEv-07-Ld1" kind="presentation" id="xgL-x8-i3L"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WXe-yi-sbU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1500" y="-156"/>
+        </scene>
+        <!--Add Book View Controller-->
+        <scene sceneID="PC8-fi-mZQ">
+            <objects>
+                <viewController id="SEv-07-Ld1" customClass="AddBookViewController" customModule="BookExchange" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hUb-z0-8Dm"/>
+                        <viewControllerLayoutGuide type="bottom" id="jfq-CK-1mk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kTr-Yl-Hv5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hJ8-Mw-sea">
+                                <rect key="frame" x="236" y="67" width="129" height="138"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="129" id="4G2-nz-paC"/>
+                                    <constraint firstAttribute="height" constant="138" id="8gi-eI-MpP"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="WxZ-rR-xVo" appends="YES" id="RYB-7I-44z"/>
+                                </connections>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Book title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1fx-Wp-8sk">
+                                <rect key="frame" x="50" y="233" width="500" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2IU-pb-ThB">
+                                <rect key="frame" x="272" y="373" width="56" height="30"/>
+                                <state key="normal" title="subbmit"/>
+                                <connections>
+                                    <action selector="didSubbmit:" destination="SEv-07-Ld1" eventType="touchUpInside" id="5Ds-Vm-S0H"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="1fx-Wp-8sk" secondAttribute="trailing" constant="30" id="4Sa-Wl-WP1"/>
+                            <constraint firstItem="1fx-Wp-8sk" firstAttribute="top" secondItem="hJ8-Mw-sea" secondAttribute="bottom" constant="28" id="Ae7-Dl-SI9"/>
+                            <constraint firstItem="1fx-Wp-8sk" firstAttribute="leading" secondItem="kTr-Yl-Hv5" secondAttribute="leadingMargin" constant="30" id="Dkf-y5-khW"/>
+                            <constraint firstItem="hJ8-Mw-sea" firstAttribute="centerX" secondItem="kTr-Yl-Hv5" secondAttribute="centerX" id="kO7-rb-Yea"/>
+                            <constraint firstItem="2IU-pb-ThB" firstAttribute="top" secondItem="1fx-Wp-8sk" secondAttribute="bottom" constant="110" id="qhF-5r-ov2"/>
+                            <constraint firstItem="hJ8-Mw-sea" firstAttribute="top" secondItem="hUb-z0-8Dm" secondAttribute="bottom" constant="47" id="r8u-ND-VoI"/>
+                            <constraint firstItem="2IU-pb-ThB" firstAttribute="centerX" secondItem="kTr-Yl-Hv5" secondAttribute="centerX" id="zK6-kW-fwb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bookCoverImageView" destination="hJ8-Mw-sea" id="B2H-DR-2XL"/>
+                        <outlet property="bookNameTextView" destination="1fx-Wp-8sk" id="fmk-Qn-phV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OhK-Nf-Bkw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="WxZ-rR-xVo">
+                    <connections>
+                        <action selector="selectImageFromPhotoLibrary:" destination="SEv-07-Ld1" id="DJ3-pJ-U8i"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2461" y="-156"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="mit-n4-jxO">
