@@ -9,6 +9,14 @@
 import UIKit
 
 class LibraryTableViewCell: UITableViewCell {
+    
+    //MARK:Properties
+    @IBOutlet weak var bookCoverImageView: UIImageView!
+    @IBOutlet weak var bookNameLabel: UILabel!
+    @IBOutlet weak var bookDescriptionLabel: UILabel!
+    @IBOutlet weak var donaterName: UILabel!
+    @IBOutlet weak var distanceLabel: UILabel!
+    
 
     override func awakeFromNib() {
         super.awakeFromNib()

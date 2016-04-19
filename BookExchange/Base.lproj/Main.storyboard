@@ -49,7 +49,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="183"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C2V-FJ-7xU">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C2V-FJ-7xU" customClass="UIImageView">
                                             <rect key="frame" x="14" y="8" width="109" height="167"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
@@ -97,6 +97,13 @@
                                         <constraint firstItem="C2V-FJ-7xU" firstAttribute="leading" secondItem="z08-RI-uun" secondAttribute="leadingMargin" constant="6" id="xNn-zW-ROs"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="bookCoverImageView" destination="C2V-FJ-7xU" id="Hw6-lz-moS"/>
+                                    <outlet property="bookDescriptionLabel" destination="LzX-8I-bLv" id="kcw-0J-Lcs"/>
+                                    <outlet property="bookNameLabel" destination="tgc-hV-65Q" id="qKP-oB-cVZ"/>
+                                    <outlet property="distanceLabel" destination="Qdw-Mq-fzO" id="ewV-Qe-fMy"/>
+                                    <outlet property="donaterName" destination="UgO-rP-jic" id="QHn-Bb-Evg"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <sections/>

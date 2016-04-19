@@ -51,6 +51,7 @@ class LibraryTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let initIndentifier = "LibraryCell"
         let cell = tableView.dequeueReusableCellWithIdentifier(initIndentifier, forIndexPath: indexPath) as! LibraryTableViewCell
+        cell.donaterName.text = "zyc" + String(indexPath.row)
         return cell
     }
 

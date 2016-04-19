@@ -93,11 +93,11 @@
 		120A11C21CBFC1500033CBDD /* BookExchange */ = {
 			isa = PBXGroup;
 			children = (
+				12A7CA731CC685AA003A1ED3 /* View */,
 				12D0E1581CC3215D009FC778 /* Utils */,
 				12D0E1531CC270E2009FC778 /* Moudle */,
 				12D0E1501CC27079009FC778 /* ViewController */,
 				120A11C31CBFC1500033CBDD /* AppDelegate.swift */,
-				120A11E31CBFC65A0033CBDD /* LibraryTableViewCell.swift */,
 				120A11C71CBFC1500033CBDD /* Main.storyboard */,
 				120A11CA1CBFC1500033CBDD /* Assets.xcassets */,
 				120A11CC1CBFC1500033CBDD /* LaunchScreen.storyboard */,
@@ -114,6 +114,14 @@
 				120A11DA1CBFC1510033CBDD /* Info.plist */,
 			);
 			path = BookExchangeTests;
+			sourceTree = "<group>";
+		};
+		12A7CA731CC685AA003A1ED3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				120A11E31CBFC65A0033CBDD /* LibraryTableViewCell.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		12D0E1501CC27079009FC778 /* ViewController */ = {
