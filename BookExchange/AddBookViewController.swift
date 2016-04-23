@@ -72,6 +72,13 @@ class AddBookViewController: UIViewController,UIImagePickerControllerDelegate,UI
 
     }
     
+    @IBAction func didCancel(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    
+    
+    
     func postBookToServer(book:Book){
         
         let post = AVObject(className: "BookList")

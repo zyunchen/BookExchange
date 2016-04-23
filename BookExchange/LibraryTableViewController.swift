@@ -49,7 +49,7 @@ class LibraryTableViewController: UITableViewController {
     
     // return heigh of one row.
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 183
+        return 175
     }
     
     // return the cell of onew row
