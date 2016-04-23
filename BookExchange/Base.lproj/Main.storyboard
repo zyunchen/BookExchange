@@ -136,7 +136,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hJ8-Mw-sea">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeHolder" translatesAutoresizingMaskIntoConstraints="NO" id="hJ8-Mw-sea">
                                 <rect key="frame" x="236" y="67" width="129" height="138"/>
                                 <gestureRecognizers/>
                                 <constraints>
@@ -171,6 +171,8 @@
                             <constraint firstItem="2IU-pb-ThB" firstAttribute="centerX" secondItem="kTr-Yl-Hv5" secondAttribute="centerX" id="zK6-kW-fwb"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="bookCoverImageView" destination="hJ8-Mw-sea" id="B2H-DR-2XL"/>
                         <outlet property="bookNameTextView" destination="1fx-Wp-8sk" id="fmk-Qn-phV"/>
@@ -223,4 +225,7 @@
             <point key="canvasLocation" x="688" y="-156"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="placeHolder" width="109" height="167"/>
+    </resources>
 </document>

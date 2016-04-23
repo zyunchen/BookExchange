@@ -12,12 +12,10 @@ class LibraryTableViewController: UITableViewController {
     
     //MARK:Properties
     let InitIndentifier = "LibraryCell"
-    var cellForHeight:LibraryTableViewCell!
     var bookList:NSArray = [AVObject]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        cellForHeight = tableView.dequeueReusableCellWithIdentifier(InitIndentifier) as! LibraryTableViewCell
         BookExchangeService.getBooks(false, notice: true) { (objects, error) in
             if error != nil {
                 print("there is someting worng " +  error.description)
@@ -48,14 +46,10 @@ class LibraryTableViewController: UITableViewController {
         return bookList.count
     }
     
-    //return the estimated height for row
-    override func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 70
-    }
     
     // return heigh of one row.
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return cellForHeight.systemLayoutSizeFittingSize(UILayoutFittingCompressedSize).height
+        return 183
     }
     
     // return the cell of onew row
