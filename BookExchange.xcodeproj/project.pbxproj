@@ -17,6 +17,7 @@
 		12D0E14F1CC27074009FC778 /* AddBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D0E14E1CC27074009FC778 /* AddBookViewController.swift */; };
 		12D0E1521CC270DB009FC778 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D0E1511CC270DB009FC778 /* Book.swift */; };
 		12D0E15A1CC32173009FC778 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D0E1591CC32173009FC778 /* Utils.swift */; };
+		12D6A6741CCB37B400332738 /* BookExchangeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D6A6731CCB37B400332738 /* BookExchangeService.swift */; };
 		78830266F541DAF3FB762079 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E20D20EF14BDFC6DCD0E426A /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,7 @@
 		12D0E14E1CC27074009FC778 /* AddBookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddBookViewController.swift; sourceTree = "<group>"; };
 		12D0E1511CC270DB009FC778 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		12D0E1591CC32173009FC778 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		12D6A6731CCB37B400332738 /* BookExchangeService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookExchangeService.swift; sourceTree = "<group>"; };
 		1942CB620783743F51D33A5B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		BA99B1C6FF57944F9FE46659 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		E20D20EF14BDFC6DCD0E426A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				12D0E1591CC32173009FC778 /* Utils.swift */,
+				12D6A6731CCB37B400332738 /* BookExchangeService.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				12D0E1521CC270DB009FC778 /* Book.swift in Sources */,
 				120A11E41CBFC65A0033CBDD /* LibraryTableViewCell.swift in Sources */,
 				12D0E15A1CC32173009FC778 /* Utils.swift in Sources */,
+				12D6A6741CCB37B400332738 /* BookExchangeService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

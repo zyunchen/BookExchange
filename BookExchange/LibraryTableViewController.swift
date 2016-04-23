@@ -13,10 +13,21 @@ class LibraryTableViewController: UITableViewController {
     //MARK:Properties
     let InitIndentifier = "LibraryCell"
     var cellForHeight:LibraryTableViewCell!
+    var bookList:NSArray = [AVObject]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         cellForHeight = tableView.dequeueReusableCellWithIdentifier(InitIndentifier) as! LibraryTableViewCell
+        BookExchangeService.getBooks(false, notice: true) { (objects, error) in
+            if error != nil {
+                print("there is someting worng " +  error.description)
+            }else {
+                self.bookList = objects
+                print("get book success and book count is " + String(self.bookList.count))
+                print(self.bookList)
+                self.tableView.reloadData()
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,7 +45,7 @@ class LibraryTableViewController: UITableViewController {
     
     // return number of rows in one section, and it will be the hole number of books.
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return bookList.count
     }
     
     //return the estimated height for row
@@ -51,7 +62,16 @@ class LibraryTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let initIndentifier = "LibraryCell"
         let cell = tableView.dequeueReusableCellWithIdentifier(initIndentifier, forIndexPath: indexPath) as! LibraryTableViewCell
-        cell.donaterName.text = "zyc" + String(indexPath.row)
+        if indexPath.row < bookList.count {
+            if let book = bookList[indexPath.row] as? AVObject {
+                let bookCover = book.objectForKey(Book.AVOSConstant.bookCoverUrl) as? String
+                let bookName = book.objectForKey(Book.AVOSConstant.bookName) as? String
+                let bookDonater = book.objectForKey(Book.AVOSConstant.bookDonater) as? String
+                let aBook = Book(bookCoverUrl: bookCover,bookName: bookName,bookDonater: bookDonater)
+                cell.initWithBook(aBook)
+                
+            }
+        }
         return cell
     }
 
