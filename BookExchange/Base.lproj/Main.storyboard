@@ -46,7 +46,7 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="170"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dRh-rG-c5b" id="z08-RI-uun">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="169.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="170"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C2V-FJ-7xU" customClass="UIImageView">
@@ -56,6 +56,11 @@
                                                 <constraint firstAttribute="height" constant="154" id="FOQ-lS-vsT"/>
                                                 <constraint firstAttribute="width" constant="110" id="xYf-QK-3Cg"/>
                                             </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="FOQ-lS-vsT"/>
+                                                </mask>
+                                            </variation>
                                         </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book name here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tgc-hV-65Q">
                                             <rect key="frame" x="132" y="8" width="125" height="21"/>
@@ -113,6 +118,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Library" id="fwh-y2-oB7">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="hVM-n5-hDP">
+                            <connections>
+                                <segue destination="VkT-RY-lBe" kind="presentation" id="Ixm-bD-GIp"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="8Su-bu-I8Y">
                             <connections>
                                 <segue destination="i1y-BB-O0w" kind="presentation" id="xgL-x8-i3L"/>
@@ -123,6 +133,31 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WXe-yi-sbU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1500" y="-156"/>
+        </scene>
+        <!--Add Book With Scanner View Controller-->
+        <scene sceneID="hhS-rx-knR">
+            <objects>
+                <viewController id="SV4-et-Utp" customClass="AddBookWithScannerViewController" customModule="BookExchange" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DO3-yL-MYt"/>
+                        <viewControllerLayoutGuide type="bottom" id="zDi-ES-PuT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="quM-YL-anW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="N8t-9y-Tql">
+                        <barButtonItem key="leftBarButtonItem" title="cancel" id="tBI-KX-YM3">
+                            <connections>
+                                <action selector="didCancel:" destination="SV4-et-Utp" id="g2r-DY-e4f"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I40-Bj-fzl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2312" y="614"/>
         </scene>
         <!--Add Book View Controller-->
         <scene sceneID="PC8-fi-mZQ">
@@ -249,6 +284,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1e2-Eh-g3f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2461" y="-156"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="F92-8I-c0U">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VkT-RY-lBe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OlI-g7-uKQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="SV4-et-Utp" kind="relationship" relationship="rootViewController" id="MpM-nG-7Hz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5i3-1M-I7k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1500" y="614"/>
         </scene>
     </scenes>
     <resources>

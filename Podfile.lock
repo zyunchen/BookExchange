@@ -5,15 +5,18 @@ PODS:
   - SDWebImage (3.7.5):
     - SDWebImage/Core (= 3.7.5)
   - SDWebImage/Core (3.7.5)
+  - TFBarcodeScanner (1.2.0)
 
 DEPENDENCIES:
   - AVOSCloud
   - AVOSCloudCrashReporting
   - SDWebImage (~> 3.7)
+  - TFBarcodeScanner
 
 SPEC CHECKSUMS:
   AVOSCloud: 957d1508104d7c8ed501df9d9b734d7a98c2e047
   AVOSCloudCrashReporting: 68b4c9096c5f465f1cbda4a1d7ea5f04efa930ab
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
+  TFBarcodeScanner: 52168d975fde5a51cfe53c557a66a67b5f5b0d19
 
 COCOAPODS: 0.39.0
