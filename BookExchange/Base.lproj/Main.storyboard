@@ -154,6 +154,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="zIT-7z-edO" kind="show" identifier="ShowAddBookDetail" id="peQ-Us-Rjn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I40-Bj-fzl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -229,6 +232,51 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="3273" y="-156"/>
+        </scene>
+        <!--Add Book Detail View Controller-->
+        <scene sceneID="mgH-SR-y4j">
+            <objects>
+                <viewController id="zIT-7z-edO" customClass="AddBookDetailViewController" customModule="BookExchange" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wBE-uo-AK7"/>
+                        <viewControllerLayoutGuide type="bottom" id="Usu-A4-QOn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="H6s-kK-Prm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeHolder" translatesAutoresizingMaskIntoConstraints="NO" id="OQI-HW-2oY">
+                                <rect key="frame" x="37" y="111" width="110" height="154"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="krI-ND-77c"/>
+                                    <constraint firstAttribute="height" constant="154" id="s4i-2A-DkH"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YHP-o3-c2n">
+                                <rect key="frame" x="166" y="111" width="405" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IiV-bT-Sao">
+                                <rect key="frame" x="276" y="536" width="49" height="30"/>
+                                <state key="normal" title="Submit"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OQI-HW-2oY" firstAttribute="leading" secondItem="H6s-kK-Prm" secondAttribute="leadingMargin" constant="17" id="4DB-L8-I4M"/>
+                            <constraint firstItem="OQI-HW-2oY" firstAttribute="top" secondItem="wBE-uo-AK7" secondAttribute="bottom" constant="47" id="Y76-Yo-FEY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bookCoverImageView" destination="OQI-HW-2oY" id="VMq-40-Wv3"/>
+                        <outlet property="bookNameLabel" destination="YHP-o3-c2n" id="SyE-Ee-fx5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CEo-Vf-Yq2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3031" y="614"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="mit-n4-jxO">

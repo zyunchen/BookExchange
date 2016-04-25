@@ -19,6 +19,7 @@
 		12D0E15A1CC32173009FC778 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D0E1591CC32173009FC778 /* Utils.swift */; };
 		12D6A6741CCB37B400332738 /* BookExchangeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D6A6731CCB37B400332738 /* BookExchangeService.swift */; };
 		12D6A6761CCBCF1300332738 /* AddBookWithScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D6A6751CCBCF1300332738 /* AddBookWithScannerViewController.swift */; };
+		12D6A6781CCBDDD400332738 /* AddBookDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D6A6771CCBDDD400332738 /* AddBookDetailViewController.swift */; };
 		D14AA22A107EA2899C8967FA /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38726B8605B8F2167F76BD86 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		12D0E1591CC32173009FC778 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		12D6A6731CCB37B400332738 /* BookExchangeService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookExchangeService.swift; sourceTree = "<group>"; };
 		12D6A6751CCBCF1300332738 /* AddBookWithScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddBookWithScannerViewController.swift; sourceTree = "<group>"; };
+		12D6A6771CCBDDD400332738 /* AddBookDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddBookDetailViewController.swift; sourceTree = "<group>"; };
 		1942CB620783743F51D33A5B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		38726B8605B8F2167F76BD86 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA99B1C6FF57944F9FE46659 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 				120A11C51CBFC1500033CBDD /* LibraryTableViewController.swift */,
 				12D0E14E1CC27074009FC778 /* AddBookViewController.swift */,
 				12D6A6751CCBCF1300332738 /* AddBookWithScannerViewController.swift */,
+				12D6A6771CCBDDD400332738 /* AddBookDetailViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 				120A11E41CBFC65A0033CBDD /* LibraryTableViewCell.swift in Sources */,
 				12D0E15A1CC32173009FC778 /* Utils.swift in Sources */,
 				12D6A6741CCB37B400332738 /* BookExchangeService.swift in Sources */,
+				12D6A6781CCBDDD400332738 /* AddBookDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

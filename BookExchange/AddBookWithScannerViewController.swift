@@ -11,6 +11,8 @@ import TFBarcodeScanner
 
 class AddBookWithScannerViewController: TFBarcodeScannerViewController {
     
+    var barcodeString:String?
+    
     
 
     @IBAction func didCancel(sender: AnyObject) {
@@ -20,6 +22,13 @@ class AddBookWithScannerViewController: TFBarcodeScannerViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         barcodeTypes = TFBarcodeType.EAN8.rawValue | TFBarcodeType.EAN13.rawValue | TFBarcodeType.UPCA.rawValue | TFBarcodeType.UPCE.rawValue | TFBarcodeType.QRCODE.rawValue
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "ShowAddBookDetail" {
+            let addBookViewController = segue.destinationViewController as! AddBookDetailViewController
+            addBookViewController.isbn = barcodeString
+        }
     }
     
     //MARK: TFBarcodeScannerViewController
@@ -37,6 +46,8 @@ class AddBookWithScannerViewController: TFBarcodeScannerViewController {
         for barcode in barcodes {
             let barcode = barcode as! TFBarcode
             print("scanned bar code is " + barcode.string)
+            barcodeString = barcode.string
+            performSegueWithIdentifier("ShowAddBookDetail", sender: self)
         }
     }
 }
