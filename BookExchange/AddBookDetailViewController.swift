@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class AddBookDetailViewController: UIViewController {
     
@@ -18,6 +19,16 @@ class AddBookDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         bookNameLabel.text = isbn
+        BookExchangeService.getBookDeailWithISBN(isbn){
+            book in
+            dispatch_async(dispatch_get_main_queue()) {
+                if let coverUrl = book.bookCoverUrl {
+                    self.bookCoverImageView.sd_setImageWithURL(NSURL(string: coverUrl))
+                }
+                self.bookNameLabel.text = book.bookName
+                
+            }
+        }
     }
 
 

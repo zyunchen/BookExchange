@@ -14,6 +14,7 @@
 		120A11CE1CBFC1500033CBDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 120A11CC1CBFC1500033CBDD /* LaunchScreen.storyboard */; };
 		120A11D91CBFC1510033CBDD /* BookExchangeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120A11D81CBFC1510033CBDD /* BookExchangeTests.swift */; };
 		120A11E41CBFC65A0033CBDD /* LibraryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120A11E31CBFC65A0033CBDD /* LibraryTableViewCell.swift */; };
+		1234DA061CCE73D50062F9D3 /* BookDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1234DA051CCE73D50062F9D3 /* BookDetail.swift */; };
 		12D0E14F1CC27074009FC778 /* AddBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D0E14E1CC27074009FC778 /* AddBookViewController.swift */; };
 		12D0E1521CC270DB009FC778 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D0E1511CC270DB009FC778 /* Book.swift */; };
 		12D0E15A1CC32173009FC778 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D0E1591CC32173009FC778 /* Utils.swift */; };
@@ -45,6 +46,7 @@
 		120A11D81CBFC1510033CBDD /* BookExchangeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookExchangeTests.swift; sourceTree = "<group>"; };
 		120A11DA1CBFC1510033CBDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		120A11E31CBFC65A0033CBDD /* LibraryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryTableViewCell.swift; sourceTree = "<group>"; };
+		1234DA051CCE73D50062F9D3 /* BookDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookDetail.swift; sourceTree = "<group>"; };
 		12D0E1181CC262D3009FC778 /* BookExchange-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BookExchange-Bridging-Header.h"; sourceTree = "<group>"; };
 		12D0E14E1CC27074009FC778 /* AddBookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddBookViewController.swift; sourceTree = "<group>"; };
 		12D0E1511CC270DB009FC778 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				12D0E1511CC270DB009FC778 /* Book.swift */,
+				1234DA051CCE73D50062F9D3 /* BookDetail.swift */,
 			);
 			name = Moudle;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				12D0E15A1CC32173009FC778 /* Utils.swift in Sources */,
 				12D6A6741CCB37B400332738 /* BookExchangeService.swift in Sources */,
 				12D6A6781CCBDDD400332738 /* AddBookDetailViewController.swift in Sources */,
+				1234DA061CCE73D50062F9D3 /* BookDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
