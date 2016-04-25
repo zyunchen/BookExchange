@@ -10,10 +10,14 @@ struct Book {
     var bookCoverUrl:String?
     var bookName:String?
     var bookDonater:String?
+    var bookDescription:String?
+    var bookISBN:String?
     
     struct AVOSConstant {
         static let bookCoverUrl = "BookCoverUrl"
         static let bookName = "BookName"
         static let bookDonater = "BookDonater"
+        static let bookDescription = "BookDescription"
+        static let bookISBN = "BookISBN"
     }
 }

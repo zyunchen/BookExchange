@@ -37,6 +37,7 @@ class LibraryTableViewCell: UITableViewCell {
         if let url = book.bookCoverUrl {
             bookCoverImageView.sd_setImageWithURL(NSURL(string: url))
         }
+        bookDescriptionLabel.text = book.bookDescription
     }
 
 }

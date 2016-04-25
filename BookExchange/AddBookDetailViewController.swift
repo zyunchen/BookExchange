@@ -13,6 +13,7 @@ class AddBookDetailViewController: UIViewController {
     
     //MARK: Properties
     var isbn:String?
+    var bookDetail:BookDetail?
     @IBOutlet weak var bookCoverImageView: UIImageView!
     @IBOutlet weak var bookNameLabel: UILabel!
 
@@ -21,6 +22,7 @@ class AddBookDetailViewController: UIViewController {
         bookNameLabel.text = isbn
         BookExchangeService.getBookDeailWithISBN(isbn){
             book in
+            self.bookDetail = book
             dispatch_async(dispatch_get_main_queue()) {
                 if let coverUrl = book.bookCoverUrl {
                     self.bookCoverImageView.sd_setImageWithURL(NSURL(string: coverUrl))
@@ -30,6 +32,16 @@ class AddBookDetailViewController: UIViewController {
             }
         }
     }
+
+    
+    @IBAction func didSubmit(sender: AnyObject) {
+        
+        if let bookDetail = bookDetail{
+            let book = bookDetail.getBook()
+            BookExchangeService.postBookToServer(book)
+        }
+    }
+    
 
 
 

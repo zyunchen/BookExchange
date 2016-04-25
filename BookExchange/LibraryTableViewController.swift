@@ -58,12 +58,7 @@ class LibraryTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier(initIndentifier, forIndexPath: indexPath) as! LibraryTableViewCell
         if indexPath.row < bookList.count {
             if let book = bookList[indexPath.row] as? AVObject {
-                let bookCover = book.objectForKey(Book.AVOSConstant.bookCoverUrl) as? String
-                let bookName = book.objectForKey(Book.AVOSConstant.bookName) as? String
-                let bookDonater = book.objectForKey(Book.AVOSConstant.bookDonater) as? String
-                let aBook = Book(bookCoverUrl: bookCover,bookName: bookName,bookDonater: bookDonater)
-                cell.initWithBook(aBook)
-                
+                cell.initWithBook(BookExchangeService.getBookFromAVOSObject(book))
             }
         }
         return cell

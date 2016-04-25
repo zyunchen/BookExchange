@@ -87,7 +87,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <color key="backgroundColor" red="1" green="0.031195749419999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
                                         <constraint firstItem="UgO-rP-jic" firstAttribute="leading" secondItem="C2V-FJ-7xU" secondAttribute="trailing" constant="8" id="ChB-rY-PRt"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="Qdw-Mq-fzO" secondAttribute="bottom" id="Fzx-BM-FeS"/>
@@ -258,15 +258,20 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IiV-bT-Sao">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IiV-bT-Sao">
                                 <rect key="frame" x="276" y="536" width="49" height="30"/>
                                 <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="didSubmit:" destination="zIT-7z-edO" eventType="touchUpInside" id="2Ds-bD-fQM"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="OQI-HW-2oY" firstAttribute="leading" secondItem="H6s-kK-Prm" secondAttribute="leadingMargin" constant="17" id="4DB-L8-I4M"/>
+                            <constraint firstItem="Usu-A4-QOn" firstAttribute="top" secondItem="IiV-bT-Sao" secondAttribute="bottom" constant="34" id="Ns4-EC-1c8"/>
                             <constraint firstItem="OQI-HW-2oY" firstAttribute="top" secondItem="wBE-uo-AK7" secondAttribute="bottom" constant="47" id="Y76-Yo-FEY"/>
+                            <constraint firstItem="IiV-bT-Sao" firstAttribute="centerX" secondItem="H6s-kK-Prm" secondAttribute="centerX" id="qxc-IC-g66"/>
                         </constraints>
                     </view>
                     <connections>
