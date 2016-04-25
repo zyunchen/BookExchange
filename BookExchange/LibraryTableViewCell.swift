@@ -32,7 +32,7 @@ class LibraryTableViewCell: UITableViewCell {
     
     func initWithBook(book:Book){
         bookNameLabel.text = book.bookName
-        donaterName.text = book.bookDonater
+        donaterName.text = "zyc"
         bookCoverImageView.image = UIImage(named: "placeHolder")
         if let url = book.bookCoverUrl {
             bookCoverImageView.sd_setImageWithURL(NSURL(string: url))
