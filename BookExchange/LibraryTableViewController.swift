@@ -7,20 +7,28 @@
 //
 
 import UIKit
+import XWSwiftRefresh
 
 class LibraryTableViewController: UITableViewController {
     
     //MARK:Properties
     let InitIndentifier = "LibraryCell"
-    var bookList:NSArray = [AVObject]()
+    var bookList:NSMutableArray = NSMutableArray()
+    var page = 1
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.headerView = XWRefreshNormalHeader(target: self, action:#selector(refresh))
+        tableView.footerView = XWRefreshAutoNormalFooter(target: self, action: #selector(loadMore))
+        tableView.headerView?.beginRefreshing()
         BookExchangeService.getBooks(false, notice: true,page: 1) { (objects, error) in
+            self.tableView.headerView?.endRefreshing()
             if error != nil {
                 print("there is someting worng " +  error.description)
             }else {
-                self.bookList = objects
+                for object in objects {
+                    self.bookList.addObject(object)
+                }
                 print("get book success and book count is " + String(self.bookList.count))
                 print(self.bookList)
                 self.tableView.reloadData()
@@ -31,6 +39,43 @@ class LibraryTableViewController: UITableViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    
+    func refresh(){
+        tableView.headerView?.beginRefreshing()
+        BookExchangeService.getBooks(false, notice: true,page: 1) { (objects, error) in
+            self.tableView.headerView?.endRefreshing()
+            if error != nil {
+                print("there is someting worng " +  error.description)
+            }else {
+                self.bookList.removeAllObjects()
+                for object in objects {
+                    self.bookList.addObject(object)
+                }
+                print("get book success and book count is " + String(self.bookList.count))
+                print(self.bookList)
+                self.tableView.reloadData()
+            }
+        }
+    }
+    
+    func loadMore(){
+        tableView.footerView?.beginRefreshing()
+        BookExchangeService.getBooks(false, notice: true,page: page + 1 ) { (objects, error) in
+            self.tableView.footerView?.endRefreshing()
+            if error != nil {
+                print("there is someting worng " +  error.description)
+            }else {
+                self.page += 1
+                for object in objects {
+                    self.bookList.addObject(object)
+                }
+                print("get book success and book count is " + String(self.bookList.count))
+                print(self.bookList)
+                self.tableView.reloadData()
+            }
+        }
     }
     
     

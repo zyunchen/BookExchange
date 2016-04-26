@@ -8,6 +8,7 @@ PODS:
   - SDWebImage/Core (3.7.5)
   - SwiftyJSON (2.3.2)
   - TFBarcodeScanner (1.2.0)
+  - XWSwiftRefresh (0.1.9)
 
 DEPENDENCIES:
   - Alamofire (~> 3.3)
@@ -16,6 +17,7 @@ DEPENDENCIES:
   - SDWebImage (~> 3.7)
   - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`)
   - TFBarcodeScanner
+  - XWSwiftRefresh (~> 0.1.9)
 
 EXTERNAL SOURCES:
   SwiftyJSON:
@@ -33,5 +35,6 @@ SPEC CHECKSUMS:
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
   TFBarcodeScanner: 52168d975fde5a51cfe53c557a66a67b5f5b0d19
+  XWSwiftRefresh: 1981ad8f7579da94c94a8e7720803f2579dcde46
 
 COCOAPODS: 0.39.0

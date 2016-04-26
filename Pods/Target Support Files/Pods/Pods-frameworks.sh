@@ -88,10 +88,12 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods/SDWebImage.framework"
   install_framework "Pods/SwiftyJSON.framework"
   install_framework "Pods/TFBarcodeScanner.framework"
+  install_framework "Pods/XWSwiftRefresh.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods/Alamofire.framework"
   install_framework "Pods/SDWebImage.framework"
   install_framework "Pods/SwiftyJSON.framework"
   install_framework "Pods/TFBarcodeScanner.framework"
+  install_framework "Pods/XWSwiftRefresh.framework"
 fi

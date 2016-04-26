@@ -19,8 +19,8 @@ struct BookExchangeService {
     static func getBooks(reload:Bool,notice:Bool,page:Int,response:([AnyObject]!,NSError!) -> ()){
         let query:AVQuery = AVQuery(className: "BookList")
         query.limit = 1
-                query.skip = 1 * (page - 1);
-        query.orderByAscending("updateAt")
+        query.skip = 1 * (page - 1);
+        query.orderByDescending("updatedAt")
         query.findObjectsInBackgroundWithBlock (response)
         
     }
