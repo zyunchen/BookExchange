@@ -49,6 +49,7 @@ class LibraryTableViewController: UITableViewController {
             if error != nil {
                 print("there is someting worng " +  error.description)
             }else {
+                self.page = 1
                 self.bookList.removeAllObjects()
                 for object in objects {
                     self.bookList.addObject(object)
