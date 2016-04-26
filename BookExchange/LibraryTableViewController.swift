@@ -16,7 +16,7 @@ class LibraryTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        BookExchangeService.getBooks(false, notice: true) { (objects, error) in
+        BookExchangeService.getBooks(false, notice: true,page: 1) { (objects, error) in
             if error != nil {
                 print("there is someting worng " +  error.description)
             }else {

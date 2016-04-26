@@ -16,10 +16,11 @@ struct BookExchangeService {
     }
     
     
-    static func getBooks(reload:Bool,notice:Bool,response:([AnyObject]!,NSError!) -> ()){
+    static func getBooks(reload:Bool,notice:Bool,page:Int,response:([AnyObject]!,NSError!) -> ()){
         let query:AVQuery = AVQuery(className: "BookList")
-        //        query.limit = 10
-        //        query.skip = 1;
+        query.limit = 1
+                query.skip = 1 * (page - 1);
+        query.orderByAscending("updateAt")
         query.findObjectsInBackgroundWithBlock (response)
         
     }
