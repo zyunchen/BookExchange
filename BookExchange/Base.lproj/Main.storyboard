@@ -18,14 +18,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="item2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vlR-As-RUl">
-                                <rect key="frame" x="236" y="263" width="44" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这一页还没开始呢" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vlR-As-RUl">
+                                <rect key="frame" x="232" y="290" width="136" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vlR-As-RUl" firstAttribute="centerX" secondItem="HIC-Xg-ZGz" secondAttribute="centerX" id="Eyy-sW-bKM"/>
+                            <constraint firstItem="vlR-As-RUl" firstAttribute="centerY" secondItem="HIC-Xg-ZGz" secondAttribute="centerY" id="pab-HK-Jtt"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="HhO-Q5-Ph7"/>
                 </viewController>
@@ -120,14 +124,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Library" id="fwh-y2-oB7">
-                        <barButtonItem key="leftBarButtonItem" title="扫描图书" id="hVM-n5-hDP">
+                        <barButtonItem key="rightBarButtonItem" title="添加图书" id="8Su-bu-I8Y">
                             <connections>
-                                <segue destination="VkT-RY-lBe" kind="presentation" id="Ixm-bD-GIp"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="8Su-bu-I8Y">
-                            <connections>
-                                <segue destination="i1y-BB-O0w" kind="presentation" id="xgL-x8-i3L"/>
+                                <segue destination="VkT-RY-lBe" kind="presentation" id="Rgg-0b-VrB"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -150,7 +149,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="N8t-9y-Tql">
-                        <barButtonItem key="leftBarButtonItem" title="cancel" id="tBI-KX-YM3">
+                        <barButtonItem key="leftBarButtonItem" title="取消" id="tBI-KX-YM3">
                             <connections>
                                 <action selector="didCancel:" destination="SV4-et-Utp" id="g2r-DY-e4f"/>
                             </connections>
@@ -247,22 +246,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeHolder" translatesAutoresizingMaskIntoConstraints="NO" id="OQI-HW-2oY">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OQI-HW-2oY">
                                 <rect key="frame" x="37" y="111" width="110" height="154"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="110" id="krI-ND-77c"/>
                                     <constraint firstAttribute="height" constant="154" id="s4i-2A-DkH"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YHP-o3-c2n">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YHP-o3-c2n">
                                 <rect key="frame" x="166" y="111" width="405" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IiV-bT-Sao">
-                                <rect key="frame" x="276" y="536" width="49" height="30"/>
-                                <state key="normal" title="Submit"/>
+                                <rect key="frame" x="260" y="526" width="80" height="40"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                <state key="normal" title="提交图书"/>
                                 <connections>
                                     <action selector="didSubmit:" destination="zIT-7z-edO" eventType="touchUpInside" id="2Ds-bD-fQM"/>
                                 </connections>

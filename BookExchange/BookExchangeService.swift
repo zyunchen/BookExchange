@@ -52,7 +52,7 @@ struct BookExchangeService {
     static func  getBookDetailFromJson(data:JSON) -> BookDetail{
         let book:BookDetail = BookDetail()
         book.bookName = data["title"].stringValue
-        book.bookCoverUrl = data["image"].stringValue
+        book.bookCoverUrl = data["images"]["large"].stringValue
         book.bookISBN = data["isbn13"].stringValue
         book.bookDescription = data["summary"].stringValue
         return book

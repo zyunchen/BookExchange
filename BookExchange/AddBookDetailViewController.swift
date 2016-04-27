@@ -20,16 +20,16 @@ class AddBookDetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        bookNameLabel.text = isbn
+        APESuperHUD.showOrUpdateHUD(loadingIndicator: .Standard, message: "正在获取图书数据", presentingView: view)
         BookExchangeService.getBookDeailWithISBN(isbn){
             book in
             self.bookDetail = book
             dispatch_async(dispatch_get_main_queue()) {
                 if let coverUrl = book.bookCoverUrl {
-                    self.bookCoverImageView.sd_setImageWithURL(NSURL(string: coverUrl))
+                    self.bookCoverImageView.sd_setImageWithURL(NSURL(string: coverUrl),placeholderImage: UIImage(named: "placeHolder"))
                 }
                 self.bookNameLabel.text = book.bookName
-                
+                APESuperHUD.removeHUD(animated: true, presentingView: self.view, completion: nil)
             }
         }
     }
