@@ -17,6 +17,7 @@ pod 'Alamofire', '~> 3.3'
 platform :ios, '8.0'
 use_frameworks!
 pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
+pod 'APESuperHUD', :git => 'https://github.com/apegroup/APESuperHUD.git'
 
 source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'

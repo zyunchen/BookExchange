@@ -36,7 +36,7 @@ struct BookExchangeService {
         }
     }
     
-    static func postBookToServer(book:Book){
+    static func postBookToServer(book:Book,completeHandler:(Bool,NSError?) -> Void){
         
         let post = AVObject(className: "BookList")
         post.setObject(book.bookCoverUrl, forKey: Book.AVOSConstant.bookCoverUrl)
@@ -45,9 +45,7 @@ struct BookExchangeService {
         post.setObject(book.bookISBN, forKey: Book.AVOSConstant.bookISBN)
         post.setObject(book.bookDescription, forKey: Book.AVOSConstant.bookDescription)
         post.saveInBackgroundWithBlock { (succeeded, error) in
-            if (succeeded){
-                print("post a book to server successful")
-            }
+            completeHandler(succeeded,error)
         }
     }
     

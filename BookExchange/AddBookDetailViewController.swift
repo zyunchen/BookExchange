@@ -8,6 +8,7 @@
 
 import UIKit
 import SDWebImage
+import APESuperHUD
 
 class AddBookDetailViewController: UIViewController {
     
@@ -38,7 +39,18 @@ class AddBookDetailViewController: UIViewController {
         
         if let bookDetail = bookDetail{
             let book = bookDetail.getBook()
-            BookExchangeService.postBookToServer(book)
+            APESuperHUD.showOrUpdateHUD(loadingIndicator: .Standard, message: "正在提交", presentingView: view)
+            BookExchangeService.postBookToServer(book){
+                success,error in
+                APESuperHUD.removeHUD(animated: true, presentingView: self.view, completion: nil)
+                if success {
+                    APESuperHUD.showOrUpdateHUD(icon: .HappyFace, message: "提交成功", duration: 3.0, presentingView: self.view, completion: {
+                        self.dismissViewControllerAnimated(true, completion: nil)
+                    })
+                }else{
+                    APESuperHUD.showOrUpdateHUD(icon: .SadFace, message: "提交失败，请重试", duration: 3.0, presentingView: self.view, completion:nil)
+                }
+            }
         }
     }
     

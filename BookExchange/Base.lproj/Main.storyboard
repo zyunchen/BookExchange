@@ -120,7 +120,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Library" id="fwh-y2-oB7">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="hVM-n5-hDP">
+                        <barButtonItem key="leftBarButtonItem" title="扫描图书" id="hVM-n5-hDP">
                             <connections>
                                 <segue destination="VkT-RY-lBe" kind="presentation" id="Ixm-bD-GIp"/>
                             </connections>

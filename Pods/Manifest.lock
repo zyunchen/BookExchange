@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (3.3.1)
+  - APESuperHUD (0.5.1)
   - AVOSCloud (3.2.7)
   - AVOSCloudCrashReporting (3.2.7):
     - AVOSCloud
@@ -12,6 +13,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 3.3)
+  - APESuperHUD (from `https://github.com/apegroup/APESuperHUD.git`)
   - AVOSCloud
   - AVOSCloudCrashReporting
   - SDWebImage (~> 3.7)
@@ -20,16 +22,22 @@ DEPENDENCIES:
   - XWSwiftRefresh (~> 0.1.9)
 
 EXTERNAL SOURCES:
+  APESuperHUD:
+    :git: https://github.com/apegroup/APESuperHUD.git
   SwiftyJSON:
     :git: https://github.com/SwiftyJSON/SwiftyJSON.git
 
 CHECKOUT OPTIONS:
+  APESuperHUD:
+    :commit: cd43b58434539416677c38008b14ab7686b28a0e
+    :git: https://github.com/apegroup/APESuperHUD.git
   SwiftyJSON:
     :commit: 2a5b70f06001316d4fb54501edc70b4084705da0
     :git: https://github.com/SwiftyJSON/SwiftyJSON.git
 
 SPEC CHECKSUMS:
   Alamofire: 369bc67b6f5ac33ded3648d7bd21c5bfb91c2ecc
+  APESuperHUD: 0faf383259a74dfec077e3343947b8a74a5d7a4d
   AVOSCloud: 957d1508104d7c8ed501df9d9b734d7a98c2e047
   AVOSCloudCrashReporting: 68b4c9096c5f465f1cbda4a1d7ea5f04efa930ab
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
