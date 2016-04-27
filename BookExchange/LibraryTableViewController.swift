@@ -35,6 +35,7 @@ class LibraryTableViewController: UITableViewController {
             }
         }
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -75,6 +76,17 @@ class LibraryTableViewController: UITableViewController {
                 print("get book success and book count is " + String(self.bookList.count))
                 print(self.bookList)
                 self.tableView.reloadData()
+            }
+        }
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "ShowDetail" {
+            let bookDetailViewController = segue.destinationViewController as! BookDetailViewController
+            if let libraryTableViewCell = sender as? LibraryTableViewCell {
+                let indexPath = tableView.indexPathForCell(libraryTableViewCell)!
+                let bookAVObject = bookList[indexPath.row]
+                bookDetailViewController.book = BookExchangeService.getBookFromAVOSObject(bookAVObject as! AVObject)
             }
         }
     }

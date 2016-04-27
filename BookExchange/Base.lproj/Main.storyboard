@@ -6,7 +6,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--我的-->
         <scene sceneID="BOf-fO-9XC">
             <objects>
                 <viewController id="y9U-rd-sp5" sceneMemberID="viewController">
@@ -31,7 +31,7 @@
                             <constraint firstItem="vlR-As-RUl" firstAttribute="centerY" secondItem="HIC-Xg-ZGz" secondAttribute="centerY" id="pab-HK-Jtt"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="HhO-Q5-Ph7"/>
+                    <tabBarItem key="tabBarItem" title="我的" id="HhO-Q5-Ph7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Sm-ME-Jxh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -41,12 +41,12 @@
         <scene sceneID="91J-n8-6nf">
             <objects>
                 <tableViewController id="9Bp-Xt-Ybu" customClass="LibraryTableViewController" customModule="BookExchange" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="183" sectionHeaderHeight="28" sectionFooterHeight="28" id="Xve-k4-STd">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="183" sectionHeaderHeight="28" sectionFooterHeight="28" id="Xve-k4-STd">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LibraryCell" rowHeight="170" id="dRh-rG-c5b" customClass="LibraryTableViewCell" customModule="BookExchange" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="LibraryCell" rowHeight="170" id="dRh-rG-c5b" customClass="LibraryTableViewCell" customModule="BookExchange" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="600" height="170"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dRh-rG-c5b" id="z08-RI-uun">
@@ -114,6 +114,7 @@
                                     <outlet property="bookNameLabel" destination="tgc-hV-65Q" id="qKP-oB-cVZ"/>
                                     <outlet property="distanceLabel" destination="Qdw-Mq-fzO" id="ewV-Qe-fMy"/>
                                     <outlet property="donaterName" destination="UgO-rP-jic" id="QHn-Bb-Evg"/>
+                                    <segue destination="hHj-Ww-agu" kind="show" identifier="ShowDetail" id="Zq8-Kw-FeK"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -232,7 +233,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="3273" y="-156"/>
+            <point key="canvasLocation" x="4365" y="-788"/>
         </scene>
         <!--Add Book Detail View Controller-->
         <scene sceneID="mgH-SR-y4j">
@@ -303,11 +304,11 @@
             </objects>
             <point key="canvasLocation" x="-164" y="267"/>
         </scene>
-        <!--Library-->
+        <!--图书列表-->
         <scene sceneID="Qp5-gC-Awn">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sPD-my-MKQ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Library" id="z4k-Og-4JU"/>
+                    <tabBarItem key="tabBarItem" title="图书列表" id="z4k-Og-4JU"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bpn-sj-fAd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -338,7 +339,26 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1e2-Eh-g3f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2461" y="-156"/>
+            <point key="canvasLocation" x="2691" y="-914"/>
+        </scene>
+        <!--Book Detail View Controller-->
+        <scene sceneID="icY-GF-CfB">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="hHj-Ww-agu" customClass="BookDetailViewController" customModule="BookExchange" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0db-iw-XcV"/>
+                        <viewControllerLayoutGuide type="bottom" id="fkg-aa-Rqe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jo1-YK-Uud">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lRq-cF-mMI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vj3-fr-Kf2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2496" y="-156"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="F92-8I-c0U">
