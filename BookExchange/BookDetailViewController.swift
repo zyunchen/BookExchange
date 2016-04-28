@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import APESuperHUD
 
 class BookDetailViewController: UIViewController {
     
@@ -16,7 +17,16 @@ class BookDetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(book?.bookName)
+        title = book?.bookName
+        APESuperHUD.showOrUpdateHUD(loadingIndicator: .Standard, message: "正在获取图书数据", presentingView:view)
+        BookExchangeService.getBookDeailWithISBN(book?.bookISBN){
+            book in
+            self.bookDetail = book
+            dispatch_async(dispatch_get_main_queue()) {
+                //update ui here
+                APESuperHUD.removeHUD(animated: true, presentingView: self.view, completion: nil)
+            }
+        }
     }
     
 

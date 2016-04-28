@@ -8,6 +8,7 @@
 
 import UIKit
 import XWSwiftRefresh
+import APESuperHUD
 
 class LibraryTableViewController: UITableViewController {
     
@@ -20,11 +21,11 @@ class LibraryTableViewController: UITableViewController {
         super.viewDidLoad()
         tableView.headerView = XWRefreshNormalHeader(target: self, action:#selector(refresh))
         tableView.footerView = XWRefreshAutoNormalFooter(target: self, action: #selector(loadMore))
-        tableView.headerView?.beginRefreshing()
+        APESuperHUD.showOrUpdateHUD(loadingIndicator: .Standard, message: "正在获取图书数据", presentingView:view)
         BookExchangeService.getBooks(false, notice: true,page: 1) { (objects, error) in
-            self.tableView.headerView?.endRefreshing()
+            APESuperHUD.removeHUD(animated: true, presentingView: self.view, completion: nil)
             if error != nil {
-                print("there is someting worng " +  error.description)
+                APESuperHUD.showOrUpdateHUD(icon: .SadFace, message: "拉取数据失败，请稍后再试", duration: 3.0, presentingView: self.view, completion: nil)
             }else {
                 for object in objects {
                     self.bookList.addObject(object)
